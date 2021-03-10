@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 70rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+header:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    z-index: 25;
+}
+
+.ski1{
+    position: absolute;
+    width: 2000px;
+    bottom: -450px;
+    right: -300px;
+    z-index: 20;
+}
+
+.hotair1{
+    position: absolute;
+    bottom: 550px;
+    width: 100px;
+    right: 850px;
+    z-index: 19;
+}
+
+.balloon1{
+    position: absolute;
+    bottom: 750px;
+    width: 100px;
+    left: 150px;
+    z-index: 19;
+}
+
+.balloon2{
+    position: absolute;
+    bottom: 650px;
+    width: 75px;
+    left: 350px;
+    z-index: 15;
+}
+
+.moon{
+    position: absolute;
+    bottom: 850px;
+    width: 110px;
+    right: 50px;
+    z-index: 19;
+    opacity: 65%;
+}
+
+.background{
+    position: absolute;
+    width: 3000px;
+    bottom: -580px;
+    right: -650px;
+    z-index: 17;
+}
+
+.sky{
+    position: absolute;
+    width: 2000px;
+    bottom: 252px;
+    right: 0;
+}
+
+@media(max-width: 600px){
+    .ski1{
+        position: absolute;
+        width: 2000px;
+        bottom: -500px;
+        right: -480px;
+        z-index: 20;
+    }
+
+    .balloon1{
+        position: absolute;
+        bottom: 690px;
+        width: 50px;
+        left: 50px;
+        z-index: 19;
+    }
+    .balloon2{
+        position: absolute;
+        bottom: 720px;
+        width: 35px;
+        left: 130px;
+        z-index: 15;
+    }
+    .moon{
+        position: absolute;
+        bottom: 760px;
+        width: 40px;
+        right: 25px;
+        z-index: 19;
+        opacity: 65%;
+    }
+    
+}
+
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 30;
+    background: linear-gradient(to bottom, rgba( 0, 0, 0, 0.05), transparent)
+}
+
+
+
+.big-title{
+    position: absolute;
+    z-index: 30;
+    line-height: 4rem;
+    top: calc(50% - 2rem);
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+section{
+    width: 100%;
+    background-color: #151515;
+    position: relative;
+}
+
+section .container{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    position: relative;
+}
+
+.shadow{
+    position: absolute;
+    bottom: 100%;
+    height: 300px;
+    width: 100%;
+    left: 0;
+    z-index: 20;
+    background: linear-gradient(to top, #151515, transparent);
+}
+
+
+
+@media (max-width: 850px){
+    section .container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 600px){
+    .big-title{
+        font-size: 3rem
+    }
+
+    .text{
+        font-size: .8rem;
+    }
+
+    .title{
+        font-size: 1.2rem;
+    }
+}
