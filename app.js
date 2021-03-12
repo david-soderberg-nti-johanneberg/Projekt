@@ -5,8 +5,9 @@ const shadow = document.querySelector(".shadow");
 const content = document.querySelector(".content");
 const section = document.querySelector("section");
 const image_container = document.querySelector(".imgContainer");
-const opacity = document.querySelectorAll(".opacity");
+var opacity = document.querySelectorAll(".opacity");
 const border = document.querySelector(".border");
+
 
 let header_height = header.offsetHeight;
 let section_height = section.offsetHeight;
@@ -20,8 +21,20 @@ window.addEventListener('scroll', () => {
         element.style.transform = `translateY(${scroll * speed}px)`;
     })
 
+    function myFunction(x) {
+        if (x.matches) {
+        y = 0.6 + (scroll * 3 / (sectionY.top + section_height));
+        } else {
+        y = 0.1 + scroll / (sectionY.top + section_height);
+        }
+      }
+      
+      var x = window.matchMedia("(max-width: 700px)")
+      myFunction(x)
+      x.addListener(myFunction) 
+      
     opacity.forEach(element => {
-        element.style.opacity = scroll / (sectionY.top + section_height);
+        element.style.opacity = y
     })
 
     big_title.style.opacity = - scroll / (header_height / 2) + 1;
@@ -32,4 +45,24 @@ window.addEventListener('scroll', () => {
 
 
     border.style.width = `${scroll / (sectionY.top + section_height) * 30}%`;
+
+// Add no-touch class to body for mobile touch events and toggle hover class on elements that need it
+if ("ontouchstart" in document.documentElement) {
+    document.documentElement.className += " touch";
+}
+
+// Add and remove no-hover class to <li>'s for mobile hover events
+jQuery('.card').each(function() {
+    var div = jQuery(this);
+    
+    div.hover(function() {
+        div.removeClass('no-hover');
+    });
+    
+    jQuery('*').not(div).bind('click', function() {
+        div.addClass('no-hover');
+    });
+    
+});
+ 
 })
