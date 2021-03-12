@@ -11,7 +11,7 @@ body{
 }
 
 .container{
-    max-width: 70rem;
+    max-width: 120rem;
     padding: 0 2rem;
     margin: 0 auto;
 }
@@ -125,17 +125,6 @@ header:after{
 }
 
 
-nav{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem 0;
-    z-index: 30;
-    background: linear-gradient(to bottom, rgba( 0, 0, 0, 0.05), transparent)
-}
-
-
 
 .big-title{
     position: absolute;
@@ -151,25 +140,49 @@ nav{
 
 section{
     width: 100%;
-    background-color: #151515;
+    background-color: #2B2D42;
     position: relative;
+
 }
 
 section .container{
-    padding: 3rem;
+    padding-bottom: 10rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    row-gap: 75px;
+}
+
+section img{
+    width: 100%;
+}
+
+
+.content{
+    color: #fff;
+    transform: translateY(-50px);
+
 }
 
 .title{
+    padding-top: 5rem;
+    padding-bottom: 4rem;
     font-weight: 600;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    padding-bottom: .5rem;
+    font-size: 3rem;
+    text-align: center;
     position: relative;
+    color: white;
+}
+
+.border{
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
 }
 
 .shadow{
@@ -179,10 +192,12 @@ section .container{
     width: 100%;
     left: 0;
     z-index: 20;
-    background: linear-gradient(to top, #151515, transparent);
+    background: linear-gradient(to top, #2B2D42, transparent);
 }
 
-
+.opacity{
+    opacity: 0;
+}
 
 @media (max-width: 850px){
     section .container{
@@ -203,3 +218,131 @@ section .container{
         font-size: 1.2rem;
     }
 }
+.container img{
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: hidden;
+    width: 250px;
+    border-radius: 25px;
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+.servicewrapper{
+align-items: center;
+}
+
+.service{
+    margin: 50px;
+    display: grid;
+    justify-self: center;
+    justify-content: center;
+
+}
+
+.footer{
+    background-color: rgb(24, 33, 36);
+    height: 4em;
+}
+
+.servicewrapper{
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background: #2B2D42;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.card circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card .circle::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #EDF2F4;
+    clip-path: circle(160px at center);
+    transition: 0.5s;
+}
+
+.card:hover .circle::before{
+    clip-path: circle(400px at center);
+    background: #EF233C;
+    border-radius: 20px;
+}
+
+.card img{
+position: absolute;
+top: 30%;
+left: 50%;
+transform: translate(-50%, -50%);
+height: 350px;
+width: auto;
+pointer-events: none;
+transition: 0.5s;
+border-radius: 15px;
+}
+
+.card:hover img{
+    left: 72%;
+    height: 420px;
+}
+.card .info{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card:hover .info{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card .info h2{
+    color:#EDF2F4;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
+
+.card .info p{
+color:#EDF2F4;
+}
+
+.card .info a{
+    position: relative;
+    color:darkgreen;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: white;
+    color: yellowgreen;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+}
+  
