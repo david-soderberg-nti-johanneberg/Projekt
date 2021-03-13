@@ -264,6 +264,11 @@ align-items: center;
     border-radius: 20px;
     transition: 0.5s;
 }
+
+.card:hover{
+
+}
+
 .card circle{
     position: absolute;
     top: 0;
@@ -350,13 +355,15 @@ color:#EDF2F4;
 }
 @media (max-width: 420px)
 {
-
+    .card{
+        align-content: center;
+    }
     .card{
         width: auto;
         max-width: 350px;
         align-items: flex-start;
     }
-    .card:hover{
+    .card:hover, .card.active{
         height: 600px;
     }
     .card .info{
@@ -364,7 +371,7 @@ color:#EDF2F4;
         left: 0;
         padding: 40px;
     }
-    .card:hover img{
+    .card:hover img, .card.active img, .card.tap{
         top: 70%;
         left: 50%;
         height: 320px;
@@ -379,6 +386,4 @@ color:#EDF2F4;
 
 .card .info a{
     align-self: center;
-}
-
 }
