@@ -96,7 +96,7 @@ header:after{
 .sky{
     position: absolute;
     width: 2000px;
-    bottom: 110px;
+    bottom: 140px;
 }
 
 @media(max-width: 600px){
