@@ -399,8 +399,8 @@ color:White;
 }
 @media (max-width: 1920px){
     .bar{
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 65px;
+    padding-right: 65px;
 }}
 
 @media (max-width: 1550px)
