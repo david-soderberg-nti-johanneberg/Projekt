@@ -418,8 +418,8 @@ color:White;
 @media (max-width: 1550px)
 {
     .bar {
-        margin-left: 55px;
-        margin-right: 55px;
+        margin-left: 25px;
+        margin-right: 25px;
         font-size: 20px;
         
     }
