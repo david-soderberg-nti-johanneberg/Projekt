@@ -75,6 +75,7 @@ console.log(1)
 titleoption.innerHTML = "Skiing";
 infooption.innerHTML = "Insert cool information about our amazing skiing service.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas lectus libero, sit amet semper lectus vulputate malesuada. Maecenas imperdiet nulla augue, at condimentum magna pretium vitae. Sed bibendum imperdiet arcu, sit amet dictum orci blandit eget. Nam eget fringilla sem. Praesent vel euismod enim. Donec dapibus pharetra fermentum. Nam orci ligula, pulvinar sed mauris eu, tincidunt porta sem. Pellentesque non neque dictum, congue risus ut, aliquet nunc <br><br> 1. Lorem <br><br> 2.Bla bla <br><br> 3.Bla bla";
 imgoption.src = "img/skiservice.png"
+imgoption.alt="Image of Skier"
 mapEl.style.opacity = "100%";
 movecenter(60.65960245616614, 12.965496154245761)
 })
@@ -83,6 +84,7 @@ console.log(2)
 titleoption.innerHTML = "Biking";
 infooption.innerHTML = "Insert cool information about our amazing Biking service.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas lectus libero, sit amet semper lectus vulputate malesuada. Maecenas imperdiet nulla augue, at condimentum magna pretium vitae. Sed bibendum imperdiet arcu, sit amet dictum orci blandit eget. Nam eget fringilla sem. Praesent vel euismod enim. Donec dapibus pharetra fermentum. Nam orci ligula, pulvinar sed mauris eu, tincidunt porta sem. Pellentesque non neque dictum, congue risus ut, aliquet nunc <br><br> 1. Lorem <br><br> 2.Bla bla <br><br> 3.Bla bla"
 imgoption.src = "img/bikeservice.png"
+imgoption.alt="Image of biker"
 mapEl.style.opacity = "100%";
 movecenter(57.49697653074465, 13.109522849249215)
 })
@@ -91,6 +93,7 @@ console.log(3)
 titleoption.innerHTML = "Hotair Balloon";
 infooption.innerHTML = "Insert cool information about our amazing Ballooning service.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas lectus libero, sit amet semper lectus vulputate malesuada. Maecenas imperdiet nulla augue, at condimentum magna pretium vitae. Sed bibendum imperdiet arcu, sit amet dictum orci blandit eget. Nam eget fringilla sem. Praesent vel euismod enim. Donec dapibus pharetra fermentum. Nam orci ligula, pulvinar sed mauris eu, tincidunt porta sem. Pellentesque non neque dictum, congue risus ut, aliquet nunc <br><br> 1. Lorem <br><br> 2.Bla bla <br><br> 3.Bla bla"
 imgoption.src = "img/balloonservice.png"
+imgoption.alt="Image of hotair Balloon"
 mapEl.style.opacity = "100%";
 movecenter(55.580678402785864, 12.931632625374906)
 })
@@ -99,6 +102,7 @@ console.log(4)
 titleoption.innerHTML = "Scuba Diving";
 infooption.innerHTML = "Insert cool information about our amazing Scuba service.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas lectus libero, sit amet semper lectus vulputate malesuada. Maecenas imperdiet nulla augue, at condimentum magna pretium vitae. Sed bibendum imperdiet arcu, sit amet dictum orci blandit eget. Nam eget fringilla sem. Praesent vel euismod enim. Donec dapibus pharetra fermentum. Nam orci ligula, pulvinar sed mauris eu, tincidunt porta sem. Pellentesque non neque dictum, congue risus ut, aliquet nunc <br><br> 1. Lorem <br><br> 2.Bla bla <br><br> 3.Bla bla"
 imgoption.src = "img/scubaservice.png"
+imgoption.alt="Image of scuba diver"
 mapEl.style.opacity = "100%";
 movecenter(59.33156797179015, 18.048364543293097)
 })
@@ -107,6 +111,7 @@ console.log(5)
 titleoption.innerHTML = "Hiking";
 infooption.innerHTML = "Insert cool information about our amazing Hiking service.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas lectus libero, sit amet semper lectus vulputate malesuada. Maecenas imperdiet nulla augue, at condimentum magna pretium vitae. Sed bibendum imperdiet arcu, sit amet dictum orci blandit eget. Nam eget fringilla sem. Praesent vel euismod enim. Donec dapibus pharetra fermentum. Nam orci ligula, pulvinar sed mauris eu, tincidunt porta sem. Pellentesque non neque dictum, congue risus ut, aliquet nunc <br><br> 1. Lorem <br><br> 2.Bla bla <br><br> 3.Bla bla"
 imgoption.src = "img/hikingservice.png"
+imgoption.alt="Image of hiker"
 mapEl.style.opacity = "100%";
 movecenter(59.33819824334666, 17.913416242454463)
 })
@@ -115,6 +120,7 @@ console.log(6)
 titleoption.innerHTML = "Climbing";
 infooption.innerHTML = "Insert cool information about our amazing Climbing service.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas lectus libero, sit amet semper lectus vulputate malesuada. Maecenas imperdiet nulla augue, at condimentum magna pretium vitae. Sed bibendum imperdiet arcu, sit amet dictum orci blandit eget. Nam eget fringilla sem. Praesent vel euismod enim. Donec dapibus pharetra fermentum. Nam orci ligula, pulvinar sed mauris eu, tincidunt porta sem. Pellentesque non neque dictum, congue risus ut, aliquet nunc <br><br> 1. Lorem <br><br> 2.Bla bla <br><br> 3.Bla bla"
 imgoption.src = "img/climbingservice.png"
+imgoption.alt="Image of mountain climber"
 mapEl.style.opacity = "100%";
 movecenter(59.29911868495861, 17.99155767646861)
 });
