@@ -399,15 +399,27 @@ color:White;
 }
 @media (max-width: 1920px){
     .bar{
-    padding-left: 65px;
-    padding-right: 65px;
+    padding-left: 100px;
+    padding-right: 100px;
+}}
+
+@media (max-width: 1120px){
+    .bar{
+    padding-left: 100px;
+    padding-right: 100px;
+}}
+
+@media (max-width: 640px){
+    .bar{
+    padding-left: 0px;
+    padding-right: 0px;
 }}
 
 @media (max-width: 1550px)
 {
     .bar {
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 55px;
+        margin-right: 55px;
         font-size: 20px;
         
     }
