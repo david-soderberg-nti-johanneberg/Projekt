@@ -13,7 +13,7 @@
 }
 ::-webkit-scrollbar-thumb
 {
-	background-color: #DE051F;
+	background-color: #B10015;
 }
 
 body{
@@ -317,7 +317,7 @@ align-items: center;
 
 .card:hover .circle{
     clip-path: circle(400px at center);
-    background: #DE051F;
+    background: #B10015;
     border-radius: 20px;
 }
 
@@ -394,7 +394,7 @@ color:White;
     text-decoration: underline;
 }
 .bar > div > a:hover , .bar > div a:active{
-    color: rgb(255, 255, 255);     
+    color: white;     
     text-decoration: underline;
 }
 @media (max-width: 1920px){
@@ -795,7 +795,7 @@ margin-left: 32px;
 
 #cont2 .card:hover .circle{
     clip-path: circle(400px at center);
-    background: #DE051F;
+    background: #B10015;
     border-radius: 20px;
 }
 
@@ -847,11 +847,11 @@ color:White;
 
 #cont2 .card .info a{
     position: relative;
-    color:darkgreen;
+    color:#006400;
     padding: 10px 20px;
     border-radius: 10px;
     background: white;
-    color: yellowgreen;
+    color: #9acd32;
     margin-top: 10px;
     display: inline-block;
     font-weight: 700;
@@ -909,8 +909,6 @@ width: 281px;
 #sw2{
     margin-top: 40px;
     width: 345px;
-    height: calc(391 * 3);
-
 }
 .continfo{
     margin-top: 32px;
